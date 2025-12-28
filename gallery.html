@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img gallery</title>
+</head>
+<style>
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    width: 50%;
+    margin: auto;
+}
+.gallery img{
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+.gallery img:hover{
+    transform: scale(1.1);
+}
+</style>
+<body>
+    <h2 style="text-align: center;">My img gallery</h2>
+    <div class="gallery">
+        <img src="mountain.jpg" alt="img1">
+        <img src="mountain.jpg" alt="img2">
+        <img src="mountain.jpg" alt="img3">
+        <img src="mountain.jpg" alt="img4">
+        <img src="mountain.jpg" alt="img5">
+        <img src="mountain.jpg" alt="img6">
+    </div>
+</body>
+</html>
